@@ -7,86 +7,100 @@
     <title>READ MORE OR LESS</title>
 </head>
 <style>
-    *{
+    * {
         margin: 0;
         padding: 0;
     }
-    .container{
+
+    .container {
         width: 90%;
         margin-left: auto;
         margin-right: auto;
     }
-    .box{
+
+    .box {
         background-color: #fff;
         border-radius: 20px;
         box-shadow: 0PX 7PX 7PX gray;
         margin: 20PX 40PX;
         overflow: hidden;
     }
-    .box h2{
+
+    .box h2 {
         font-size: 40PX;
         text-align: center;
-        background-image: linear-gradient(to right , lightseagreen , #00cc99, #004b49 );
+        background-image: linear-gradient(to right, lightseagreen, #00cc99, #004b49);
         color: #fff;
         line-height: 70px;
     }
-    .box p{
+
+    .box p {
         color: gray;
         text-align: justify;
         padding: 10px 30px;
         line-height: 25px;
-        font-family:Arial, Helvetica, sans-serif;
+        font-family: Arial, Helvetica, sans-serif;
         font-size: 20px;
     }
-    #btn1{
+
+    #btn1 {
         font-size: 15px;
         background-color: #01796f;
         color: #fff;
         padding: 10px 15px;
         margin: 20px;
         border: 2px solid #004b49;
-        box-shadow: 3px 5px 11px gray ;
+        box-shadow: 3px 5px 11px gray;
         float: right;
         border-radius: 10PX;
-        display: none;   
+        display: none;
     }
-    #btn2 , #btn3{
+
+    #btn2,
+    #btn3 {
         font-size: 15px;
         background-color: #01796f;
         color: #fff;
         padding: 10px 15px;
         margin: 20px;
         border: 2px solid #004b49;
-        box-shadow: 3px 5px 11px gray ;
+        box-shadow: 3px 5px 11px gray;
         float: right;
         border-radius: 10PX;
-        display: none;   
+        display: none;
 
     }
-    
-    #btn{
+
+    #btn {
         font-size: 15px;
         background-color: #01796f;
         color: #fff;
         padding: 10px 15px;
         margin: 20px;
         border: 2px solid #004b49;
-        box-shadow: 3px 5px 11px gray ;
+        box-shadow: 3px 5px 11px gray;
         float: right;
-        border-radius: 10PX;   
+        border-radius: 10PX;
     }
-    #btn:hover,#btn1:hover ,#btn2:hover , #btn3:hover{
-        box-shadow: 3px 5px 11px black ;
+
+    #btn:hover,
+    #btn1:hover,
+    #btn2:hover,
+    #btn3:hover {
+        box-shadow: 3px 5px 11px black;
         cursor: pointer;
     }
-    #invisiblepara1{
-        display: none ;
+
+    #invisiblepara1 {
+        display: none;
     }
-    #invisiblepara2{
-        display: none ;
+
+    #invisiblepara2 {
+        display: none;
     }
-    #invisiblepara3{
-        display: none ;
+
+    #invisiblepara3 {
+        display: none;
     }
 </style>
 
@@ -102,71 +116,77 @@
                 molestias error ullam fugit unde labore aut incidunt repellendus perferendis reiciendis, soluta
                 provident dolor ad. Minus aliquid dolore placeat, ex numquam nemo? <span id="invisiblepara1">Lorem ipsum
                     dolor sit
-                    amet consectetur adipisicing elit. Sunt, nesciunt.</span><span id="invisiblepara2">Lorem ipsum dolor
-                    sit amet
-                    consectetur adipisicing elit. Eius, possimus!</span><span id="invisiblepara3">Lorem ipsum dolor sit,
-                    amet consectetur
-                    adipisicing elit. Odio, reprehenderit.</span></p>
+                    amet consectetur adipisicing elit. Sunt, nesciunt. Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Reiciendis quod est aliquid praesentium enim veniam dolorem! Saepe porro inventore
+                    id nisi dolore quasi placeat minima cumque natus, perspiciatis delectus laborum? Corrupti, quis
+                    debitis cumque </span><span id="invisiblepara2"> Lorem ipsum dolor sit, amet consectetur
+                    adipisicing elit. At nemo velit quam aperiam autem, nobis fuga facere id molestiae consequuntur illo
+                    magni explicabo quia est debitis accusantium, rem incidunt perspiciatis dolor. Natus dicta obcaecati
+                    nostrum magnam vitae acc!</span><span id="invisiblepara3"> Lorem ipsum dolor sit
+                    amet consectetur adipisicing elit. Hic eius doloribus quis magnam necessitatibus pariatur rerum
+                    magni vero, autem omnis sit a harum, dicta nulla praesentium nam, iusto perspiciatis velit inventore
+                    voluptas rem voluptatem reprehenderit ipsam! Cum illo accusamus iusto eius corrupti molestias. Modi
+                    .</span></p>
             <button type="button" id="btn" onclick="readless()">read more</button>
             <button type="button" id="btn1" onclick="readless2()">read more</button>
             <button type="button" id="btn2" onclick="readless3()">read more</button>
             <button type="button" id="btn3" onclick="readless4()">read less</button>
         </div>
     </div>
-<script>
-    function readless(){
-        var para1 = document.getElementById("invisiblepara1")
-        var para2 = document.getElementById("invisiblepara2")
-        var para3 = document.getElementById("invisiblepara3")
-        var btn = document.getElementById("btn")
-        var btn1 = document.getElementById("btn1")
-        var btn2 = document.getElementById("btn2")
-            para2.style.display ="none"
+    <script>
+        function readless() {
+            var para1 = document.getElementById("invisiblepara1")
+            var para2 = document.getElementById("invisiblepara2")
+            var para3 = document.getElementById("invisiblepara3")
+            var btn = document.getElementById("btn")
+            var btn1 = document.getElementById("btn1")
+            var btn2 = document.getElementById("btn2")
+            para2.style.display = "none"
             para3.style.display = "none"
-            para1.style.display ="inline"
+            para1.style.display = "inline"
             btn.style.display = "none"
             btn1.style.display = "inline"
-        
-    }
-    function readless2(){
-        var para1 = document.getElementById("invisiblepara1")
-        var para2 = document.getElementById("invisiblepara2")
-        var para3 = document.getElementById("invisiblepara3")
-        var btn = document.getElementById("btn")
-        var btn1 = document.getElementById("btn1")
-        var btn2 = document.getElementById("btn2")
-        para2.style.display = "inline"
-        btn2.style.display = "inline"
-        btn1.style.display = "none"
-    }
-    function readless3(){
-        var para1 = document.getElementById("invisiblepara1")
-        var para2 = document.getElementById("invisiblepara2")
-        var para3 = document.getElementById("invisiblepara3")
-        var btn = document.getElementById("btn")
-        var btn1 = document.getElementById("btn1")
-        var btn2 = document.getElementById("btn2")
-        para3.style.display = "inline"
-        btn2.style.display = "none"
-        btn1.style.display = "none"
-        btn3.style.display = "inline"
-    }
-    function readless4(){
-        var para1 = document.getElementById("invisiblepara1")
-        var para2 = document.getElementById("invisiblepara2")
-        var para3 = document.getElementById("invisiblepara3")
-        var btn = document.getElementById("btn")
-        var btn1 = document.getElementById("btn1")
-        var btn2 = document.getElementById("btn2")
-        para3.style.display = "none"
-        para2.style.display = "none"
-        para1.style.display = "none"
-        btn2.style.display = "none"
-        btn1.style.display = "none"
-        btn3.style.display = "none"
-        btn.style.display = "inline"
-    }
-</script>
+
+        }
+        function readless2() {
+            var para1 = document.getElementById("invisiblepara1")
+            var para2 = document.getElementById("invisiblepara2")
+            var para3 = document.getElementById("invisiblepara3")
+            var btn = document.getElementById("btn")
+            var btn1 = document.getElementById("btn1")
+            var btn2 = document.getElementById("btn2")
+            para2.style.display = "inline"
+            btn2.style.display = "inline"
+            btn1.style.display = "none"
+        }
+        function readless3() {
+            var para1 = document.getElementById("invisiblepara1")
+            var para2 = document.getElementById("invisiblepara2")
+            var para3 = document.getElementById("invisiblepara3")
+            var btn = document.getElementById("btn")
+            var btn1 = document.getElementById("btn1")
+            var btn2 = document.getElementById("btn2")
+            para3.style.display = "inline"
+            btn2.style.display = "none"
+            btn1.style.display = "none"
+            btn3.style.display = "inline"
+        }
+        function readless4() {
+            var para1 = document.getElementById("invisiblepara1")
+            var para2 = document.getElementById("invisiblepara2")
+            var para3 = document.getElementById("invisiblepara3")
+            var btn = document.getElementById("btn")
+            var btn1 = document.getElementById("btn1")
+            var btn2 = document.getElementById("btn2")
+            para3.style.display = "none"
+            para2.style.display = "none"
+            para1.style.display = "none"
+            btn2.style.display = "none"
+            btn1.style.display = "none"
+            btn3.style.display = "none"
+            btn.style.display = "inline"
+        }
+    </script>
 
 </body>
 
